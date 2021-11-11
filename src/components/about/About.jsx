@@ -1,5 +1,5 @@
 import Men from "../../images/me.png";
-import Resume from "../../images/Yogesh-kumar.pdf";
+import Resume from "../../images/yogesh_kumar.pdf";
 import Tilt from 'react-tilt';
 export default function About() {
   return (
