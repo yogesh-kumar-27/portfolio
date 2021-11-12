@@ -1,9 +1,9 @@
 import { useForm } from "react-hook-form";
-import { useRef } from "react";
-import emailjs from 'emailjs-com';
+import { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 import img from "../../images/contact-img.svg";
-import Tilt from 'react-tilt';
 export default function Contact() {
+  const [done, setDone] = useState(false);
   const form = useRef();
   const {
     register,
@@ -24,6 +24,7 @@ export default function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+          setDone(true)
         },
         (error) => {
           console.log(error.text);
@@ -37,21 +38,19 @@ export default function Contact() {
   };
   return (
     <>
-      <section class="contact" id="contact">
-        <h1 class="heading">
+      <section className="contact" id="contact">
+        <h1 className="heading">
           {" "}
           contact <span> me </span>{" "}
         </h1>
 
-        <div class="row">
-          <div class="image">
-            <Tilt>
-            <img class="tilt" src={img} alt="" />
-            </Tilt>
+        <div className="row">
+          <div className="image">
+              <img className="tilt" src={img} alt="" />
           </div>
 
           <form ref={form} onSubmit={handleSubmit(onSubmitForm, onError)}>
-            <div class="inputBox">
+            <div className="inputBox">
               <input
                 type="text"
                 id="name"
@@ -111,14 +110,14 @@ export default function Contact() {
               }}
             />
             {errors.message && <small>{errors.message.message}</small>}
-
-            <input type="submit" class="btn" value="Send" />
+            {done && <strong>Contact you ASAP</strong>}
+            <input type="submit" className="btn" value="Send" />
           </form>
         </div>
       </section>
-      <footer class="footer">
+      <footer className="footer">
         {" "}
-        created by <span>  React.Js ❤️</span>{" "}
+        created by <span> React.Js ❤️</span>{" "}
       </footer>
     </>
   );

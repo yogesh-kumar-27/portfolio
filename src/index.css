@@ -10,6 +10,7 @@
   --theme:rgb(0, 0, 0);
 }
 body.active {
+  --green: rgb(0, 81, 255);
   --main-bg-color: #222;
   --second-color: rgb(255, 255, 255);
   --white-color: #000;

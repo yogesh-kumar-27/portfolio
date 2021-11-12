@@ -278,7 +278,7 @@ header .navbar a:hover {
   background: var(--white-color);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  text-align: left;
+  text-align: center;
 }
 
 .services .box-container .box img {
@@ -331,7 +331,7 @@ header .navbar a:hover {
   top: 0;
   left: -100%;
   background-image: linear-gradient(
-    180deg,rgba(15,37,110,.25),#0f256e);
+    180deg,rgba(0, 60, 255, 0.329),#529dff);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -399,6 +399,11 @@ header .navbar a:hover {
 }
 .contact .row form small{
   color: red;
+  display: block;
+}
+.contact .row form strong{
+  color: red;
+  font-size: 1rem;
   display: block;
 }
 .contact .row form .btn {

@@ -1,9 +1,6 @@
-import Tilt from "react-tilt";
-
 export default function PortfolioCard({ image, link }) {
   return (
-    <Tilt className="box tilt">
-      <div>
+      <div className="box tilt">
         <img src={image} alt="" />
         <div className="content">
           <a  rel="noreferrer" target="_blank" href={link} className="btn">
@@ -11,6 +8,5 @@ export default function PortfolioCard({ image, link }) {
           </a>
         </div>
       </div>
-    </Tilt>
   );
 }
