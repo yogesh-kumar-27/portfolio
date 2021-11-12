@@ -1,8 +1,6 @@
-import Tilt from "react-tilt";
 export default function ServiceCard({ image, title, desc, link }) {
   return (
-    <Tilt className="box ">
-      <div>
+      <div className="box ">
         <img src={image} alt="" />
         <h3>{title}</h3>
         <p> {desc} </p>
@@ -15,6 +13,5 @@ export default function ServiceCard({ image, title, desc, link }) {
           read more
         </a>
       </div>
-    </Tilt>
   );
 }

@@ -1,6 +1,5 @@
 import Men from "../../images/me.png";
 import Resume from "../../images/yogesh_kumar.pdf";
-import Tilt from 'react-tilt';
 export default function About() {
   return (
     <section class="about" id="about">
@@ -11,9 +10,7 @@ export default function About() {
 
       <div class="row">
         <div class="image">
-        <Tilt>
         <img class="tilt" src={Men} alt="" />
-        </Tilt>
         </div>
 
         <div class="content">
