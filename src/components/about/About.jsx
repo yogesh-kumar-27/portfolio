@@ -20,11 +20,7 @@ export default function About() {
           </h3>
           <p class="info">
             {" "}
-            Hi there! I am Yogesh! I am a front end web developer with a strong
-            interest in projects requiring conceptual and analytical thinking. I
-            enjoy designing websites with end users in mind. specializing in
-            HTML websites and phone applications.Have done numerous projects
-            involving front and back end development.My passion lies in learning
+            Hi there! I am Yogesh! I am a front end web developer Knowledgeable Front End Developer adept at creating successful websites that meet customer needs. Specializing in collaborating with every customers to gather requirements, produce plans and improve designs for usability and functionality. Fully proficient in html, css and javascript.My passion lies in learning
             about the latest technologies.
           </p>
           <a
@@ -73,55 +69,6 @@ export default function About() {
                 {" "}
                 <span> address : </span> Delhi, india{" "}
               </p>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="progress">
-              <p>
-                {" "}
-                web design : <span>90%</span>{" "}
-              </p>
-              <div class="bar bar-1-1">
-                <span></span>
-              </div>
-              <p>
-                {" "}
-                App design: <span>75%</span>{" "}
-              </p>
-              <div class="bar bar-1-2">
-                <span></span>
-              </div>
-              <p>
-                {" "}
-                UI/UX design : <span>80%</span>{" "}
-              </p>
-              <div class="bar bar-1-3">
-                <span></span>
-              </div>
-            </div>
-
-            <div class="progress">
-              <p>
-                {" "}
-                HTML : <span>95%</span>{" "}
-              </p>
-              <div class="bar bar-2-1">
-                <span></span>
-              </div>
-              <p>
-                {" "}
-                CSS : <span>80%</span>{" "}
-              </p>
-              <div class="bar bar-2-2">
-                <span></span>
-              </div>
-              <p>
-                {" "}
-                javascript : <span>65%</span>{" "}
-              </p>
-              <div class="bar bar-2-3">
-                <span></span>
-              </div>
             </div>
           </div>
         </div>
