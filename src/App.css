@@ -278,7 +278,7 @@ header .navbar a:hover {
   background: var(--white-color);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .services .box-container .box img {
