@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
 :root {
-  --green:#27ae60;
+  --green:rgb(39,174,96);
   --main-bg-color:#eee;
   --second-color:#222;
   --white-color:#fff;
   --third-color:#333;
   --forth-color:#fff;
   --theme:rgb(0, 0, 0);
-  --shadow:0 0.5rem 1rem rgb(33, 255, 13);
+  --shadow:0 0.5rem 1rem rgb(39,174,96);
 }
 
 body.active {
-  --green:blue;
+  --green:rgb(13, 166, 255);
   --main-bg-color:#222;
   --second-color:rgb(255, 255, 255);
   --white-color:#000;
