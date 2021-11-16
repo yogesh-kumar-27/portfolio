@@ -8,6 +8,7 @@
   --third-color:#333;
   --forth-color:#fff;
   --theme:rgb(0, 0, 0);
+  --shadow:0 0.5rem 1rem rgb(33, 255, 13);
 }
 body.active {
   --green: blue;
@@ -17,6 +18,7 @@ body.active {
   --third-color:#fff;
   --forth-color:#fff;
   --theme:rgb(255, 255, 0);
+  --shadow:0 0.5rem 1rem rgb(13, 166, 255);
 }
 * {
   font-family: "Nunito", sans-serif;

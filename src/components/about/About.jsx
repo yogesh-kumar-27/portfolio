@@ -10,7 +10,7 @@ export default function About() {
 
       <div class="row">
         <div class="image">
-        <img class="tilt" src={Men} alt="" />
+          <img class="tilt" src={Men} alt="" />
         </div>
 
         <div class="content">
@@ -20,8 +20,13 @@ export default function About() {
           </h3>
           <p class="info">
             {" "}
-            Hi there! I am Yogesh! I am a front end web developer Knowledgeable Front End Developer adept at creating successful websites that meet customer needs. Specializing in collaborating with every customers to gather requirements, produce plans and improve designs for usability and functionality. Fully proficient in html, css and javascript.My passion lies in learning
-            about the latest technologies.
+            Hi there! I am Yogesh! I am a front end web developer Knowledgeable
+            Front End Developer adept at creating successful websites that meet
+            customer needs. Specializing in collaborating with every customers
+            to gather requirements, produce plans and improve designs for
+            usability and functionality. Fully proficient in html, css and
+            javascript.My passion lies in learning about the latest
+            technologies.
           </p>
           <a
             href={Resume}

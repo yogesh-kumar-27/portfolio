@@ -23,8 +23,6 @@ export default function Hero() {
   }, []);
   return (
     <section className="home" id="home">
-      <div id="particles-js"></div>
-
       <div className="content">
         <Tilt>
         <img className="tilt" src={Men} alt="" />
