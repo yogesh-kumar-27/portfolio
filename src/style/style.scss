@@ -65,10 +65,9 @@ html {
     cursor: pointer;
     text-align: center;
     color: var(--theme);
-  
+      
     &:hover {
       color: var(--green);
-      box-shadow: var(--shadow);
     }
   }
   

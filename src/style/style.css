@@ -71,8 +71,6 @@ html::-webkit-scrollbar-thumb {
 
 #theme-toggler:hover {
   color: var(--green);
-  -webkit-box-shadow: var(--shadow);
-          box-shadow: var(--shadow);
 }
 
 body {
