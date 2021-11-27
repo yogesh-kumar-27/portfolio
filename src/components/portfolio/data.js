@@ -4,6 +4,8 @@ import img3 from '../../images/img-3.png'
 import img4 from '../../images/img-4.jpg'
 import img5 from '../../images/img-5.png'
 import img6 from '../../images/img-6.jpeg'
+import img7 from '../../images/img-7.png'
+import img8 from '../../images/img-8.png'
 const data = {
     portfolioData :[
         {
@@ -28,6 +30,14 @@ const data = {
         },
         {
             image: img6,
+            link: 'https://github.com/yogesh-kumar-27'
+        },
+        {
+            image: img7,
+            link: 'https://github.com/yogesh-kumar-27'
+        },
+        {
+            image: img8,
             link: 'https://github.com/yogesh-kumar-27'
         },
       
