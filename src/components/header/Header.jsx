@@ -1,6 +1,14 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [show, setShow] = useState(false);
+  const transitionNavbar = () => {
+    if (window.scrollY > 100) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
   const menutoggle = () => {
     let navbar = document.querySelector('.header .navbar');
 
@@ -11,24 +19,6 @@ export default function Header() {
     document.querySelector('#nav-close').onclick = () =>{
         navbar.classList.remove('active');
     }
-    
-    window.onscroll = () =>{
-        navbar.classList.remove('active');
-    
-        if(window.scrollY > 50){
-            document.querySelector('.header').classList.add('active');
-        }else{
-            document.querySelector('.header').classList.remove('active');
-        }
-    };
-    
-    window.onload = () =>{
-        if(window.scrollY > 50){
-            document.querySelector('.header').classList.add('active');
-        }else{
-            document.querySelector('.header').classList.remove('active');
-        }
-    };
   };
   const themeToggle = () => {
     let themeToggler = document.querySelector("#theme-toggler");
@@ -45,14 +35,16 @@ export default function Header() {
   useEffect(() => {
     menutoggle();
     themeToggle();
+    window.addEventListener("scroll", transitionNavbar);
     return () => {
       menutoggle();
       themeToggle();
+      window.addEventListener("scroll", transitionNavbar);
     };
   }, []);
   return (
     <>
-  <header className="header">
+  <header className={`header ${show && "header_fixed"}`}>
     <a href="#home" className="logo"> <i className="fas fa-code"></i> code. </a>
 
     <nav className="navbar">

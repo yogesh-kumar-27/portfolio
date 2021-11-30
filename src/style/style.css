@@ -102,12 +102,6 @@ section {
           align-items: center;
 }
 
-.header.active {
-  background: var(--bg-color);
-  -webkit-box-shadow: var(--shadow);
-          box-shadow: var(--shadow);
-}
-
 .header .logo {
   margin-right: auto;
   font-size: 2.5rem;
@@ -155,6 +149,12 @@ section {
 
 .header #theme-toggler {
   color: var(--theme);
+}
+
+.header_fixed {
+  background: var(--bg-color);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
 }
 
 .home {
@@ -208,12 +208,12 @@ section {
           box-shadow: var(--shadow);
   margin: 0.5rem;
   font-size: 2.5rem;
-  color: var(--orange);
+  color: var(--second-color);
   border-radius: 1rem;
 }
 
 .home .content .share a i:hover {
-  color: var(--second-color);
+  color: var(--orange);
 }
 
 .home .content p {

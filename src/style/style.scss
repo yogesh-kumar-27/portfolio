@@ -96,11 +96,6 @@ section {
   display: flex;
   align-items: center;
 
-  &.active {
-    background: var(--bg-color);
-    box-shadow: var(--shadow);
-  }
-
   .logo {
     margin-right: auto;
     font-size: 2.5rem;
@@ -151,6 +146,10 @@ section {
     color: var(--theme);
   }
 }
+.header_fixed {
+  background: var(--bg-color);
+  box-shadow: var(--shadow);
+}
 
 .home {
   display: flex;
@@ -192,11 +191,11 @@ section {
         box-shadow: var(--shadow);
         margin: 0.5rem;
         font-size: 2.5rem;
-        color: var(--orange);
+        color: var(--second-color);
         border-radius: 1rem;
 
         &:hover {
-          color: var(--second-color);
+          color: var(--orange);
         }
       }
     }
