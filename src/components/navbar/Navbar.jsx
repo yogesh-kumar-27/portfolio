@@ -2,17 +2,32 @@ import { useEffect } from "react";
 
 export default function Navbar() {
   const menutoggle = () => {
-    let menu = document.querySelector("#menu-bars");
-    let header = document.querySelector("header");
+    let navbar = document.querySelector('.header .navbar');
 
-    menu.onclick = () => {
-      menu.classList.toggle("fa-times");
-      header.classList.toggle("active");
+    document.querySelector('#menu-btn').onclick = () =>{
+        navbar.classList.add('active');
+    }
+    
+    document.querySelector('#nav-close').onclick = () =>{
+        navbar.classList.remove('active');
+    }
+    
+    window.onscroll = () =>{
+        navbar.classList.remove('active');
+    
+        if(window.scrollY > 50){
+            document.querySelector('.header').classList.add('active');
+        }else{
+            document.querySelector('.header').classList.remove('active');
+        }
     };
-
-    window.onscroll = () => {
-      menu.classList.remove("fa-times");
-      header.classList.remove("active");
+    
+    window.onload = () =>{
+        if(window.scrollY > 50){
+            document.querySelector('.header').classList.add('active');
+        }else{
+            document.querySelector('.header').classList.remove('active');
+        }
     };
   };
   const themeToggle = () => {
@@ -37,17 +52,24 @@ export default function Navbar() {
   }, []);
   return (
     <>
-      <header>
-        <div id="menu-bars" className="fas fa-bars"></div>
-        <nav className="navbar">
-          <a href="#home">home</a>
+  <header className="header">
+    <a href="#home" className="logo"> <i className="fas fa-code"></i> travel. </a>
+
+    <nav className="navbar">
+      <div id="nav-close" className="fas fa-times"></div>
+      <a href="#home">home</a>
           <a href="#about">about</a>
           <a href="#services">services</a>
           <a href="#portfolio">portfolio</a>
           <a href="#contact">contact</a>
-        </nav>
-      </header>
+    </nav>
+
+    <div className="icons">
+      <div id="menu-btn" className="fas fa-bars"></div>
       <div id="theme-toggler" className="fas fa-moon"></div>
+    </div>
+  </header>
+      
     </>
   );
 }

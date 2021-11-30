@@ -33,7 +33,7 @@ export default function Hero() {
         </h3>
         <p>
           {" "}
-          i am a <span className="typing-text"> front end developer </span>{" "}
+          i am a <span className="typing-text"></span>{" "}
         </p>
         <div className="share">
           <a  href="https://www.facebook.com/profile.php?id=100007787105543"

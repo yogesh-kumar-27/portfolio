@@ -2,23 +2,23 @@ import Men from "../../images/me.png";
 import Resume from "../../images/yogesh_kumar.pdf";
 export default function About() {
   return (
-    <section class="about" id="about">
-      <h1 class="heading">
+    <section className="about" id="about">
+      <h1 className="heading">
         {" "}
         about <span>me</span>{" "}
       </h1>
 
-      <div class="row">
-        <div class="image">
-          <img class="tilt" src={Men} alt="" />
+      <div className="row">
+        <div className="image">
+          <img className="tilt" src={Men} alt="" />
         </div>
 
-        <div class="content">
+        <div className="content">
           <h3>
             {" "}
             my name is <span> yogesh kumar </span>{" "}
           </h3>
-          <p class="info">
+          <p className="info">
             {" "}
             Hi there! I am Yogesh! I am a front end web developer Knowledgeable
             Front End Developer adept at creating successful websites that meet
@@ -33,13 +33,13 @@ export default function About() {
             download="yogesh-resume"
             target="_blank"
             rel="noopener noreferrer"
-            class="btn"
+            className="btn"
           >
             download CV
           </a>
 
-          <div class="box-container">
-            <div class="box">
+          <div className="box-container">
+            <div className="box">
               <p>
                 {" "}
                 <span> age: </span> 21{" "}
@@ -57,7 +57,7 @@ export default function About() {
                 <span> freelance : </span> available{" "}
               </p>
             </div>
-            <div class="box">
+            <div className="box">
               <p>
                 {" "}
                 <span> language : </span> hindi / english{" "}
