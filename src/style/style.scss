@@ -4,8 +4,7 @@
   --orange: #e38528;
   --bg-color: #fcf2e8;
   --second-color: #060605;
-  --white-color: #F6F8FA 
-  --theme: #000;
+  --white-color: #F6F8FA --theme: #000;
   --shadow: 0 0 0.5rem #333;
 }
 
@@ -99,24 +98,29 @@ section {
     background: var(--bg-color);
     box-shadow: var(--shadow);
   }
+
   .logo {
     margin-right: auto;
     font-size: 2.5rem;
     color: var(--orange);
     font-weight: bolder;
+
     i {
       color: var(--second-color);
     }
   }
+
   .navbar {
     a {
       margin-left: 2rem;
       font-size: 1.7rem;
       color: var(--second-color);
+
       &:hover {
         color: var(--orange);
       }
     }
+
     #nav-close {
       font-size: 5rem;
       cursor: pointer;
@@ -124,20 +128,24 @@ section {
       display: none;
     }
   }
+
   .icons a,
   .icons div {
     font-size: 2.5rem;
     margin-left: 2rem;
     cursor: pointer;
     color: var(--second-color);
+
     &:hover {
       color: var(--orange);
     }
   }
+
   #menu-btn {
     display: none;
   }
-  #theme-toggler{
+
+  #theme-toggler {
     color: var(--theme);
   }
 }
@@ -150,6 +158,7 @@ section {
   .content {
     text-align: center;
     padding: 2rem;
+
     img {
       height: 25rem;
       width: 25rem;
@@ -183,6 +192,7 @@ section {
         font-size: 2.5rem;
         color: var(--orange);
         border-radius: 1rem;
+
         &:hover {
           color: var(--second-color);
         }
@@ -321,11 +331,9 @@ section {
       position: absolute;
       top: 0;
       left: -100%;
-      background-image: linear-gradient(
-        180deg,
-        rgba(227,133,40,1),
-        rgba(246,248,250,1)
-      );
+      background-image: linear-gradient(180deg,
+          rgba(227, 133, 40, 0.719),
+          rgba(246, 248, 250, 1));
       display: flex;
       align-items: center;
       justify-content: center;
@@ -436,18 +444,22 @@ section {
   .header {
     padding: 2rem;
   }
+
   section {
     padding: 3rem 2rem;
   }
 }
+
 @media (max-width: 768px) {
   html {
     font-size: 55%;
   }
+
   .header {
     #menu-btn {
       display: inline-block;
     }
+
     .navbar {
       position: fixed;
       top: 0;
@@ -460,15 +472,18 @@ section {
       flex-flow: column;
       align-items: center;
       justify-content: center;
+
       &.active {
         left: 0;
         box-shadow: shadow;
       }
+
       a {
         margin: 1rem 0;
         color: var(--white-color);
         font-size: 3rem;
       }
+
       #nav-close {
         display: block;
         position: absolute;
@@ -477,7 +492,7 @@ section {
       }
     }
   }
- 
+
 }
 
 @media (max-width: 450px) {

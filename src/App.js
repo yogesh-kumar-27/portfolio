@@ -4,11 +4,12 @@ import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
+import Header from "./components/header/Header";
 
 const App = () => {
   return (
     <div>
-      <Navbar />
+      <Header/>
       <Hero />
       <About />
       <Service/>

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export default function Navbar() {
+export default function Header() {
   const menutoggle = () => {
     let navbar = document.querySelector('.header .navbar');
 
@@ -53,7 +53,7 @@ export default function Navbar() {
   return (
     <>
   <header className="header">
-    <a href="#home" className="logo"> <i className="fas fa-code"></i> travel. </a>
+    <a href="#home" className="logo"> <i className="fas fa-code"></i> code. </a>
 
     <nav className="navbar">
       <div id="nav-close" className="fas fa-times"></div>
