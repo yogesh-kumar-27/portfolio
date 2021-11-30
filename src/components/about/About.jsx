@@ -2,6 +2,7 @@ import Men from "../../images/me.png";
 import Resume from "../../images/yogesh_kumar.pdf";
 export default function About() {
   return (
+
     <section className="about" id="about">
       <h1 className="heading">
         {" "}
@@ -50,7 +51,7 @@ export default function About() {
               </p>
               <p>
                 {" "}
-                <span> experience : </span> 1 years{" "}
+                <span> experience : </span> 0 - 1 years{" "}
               </p>
               <p>
                 {" "}

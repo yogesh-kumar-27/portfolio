@@ -3,7 +3,7 @@
   --orange: #e38528;
   --bg-color: #fcf2e8;
   --second-color: #060605;
-  --white-color: #FBF9F8;
+  --white-color: #F6F8FA;
   --theme: #000;
   --shadow: 0 0 0.5rem #333;
 }
@@ -366,8 +366,8 @@ section {
 }
 
 .portfolio .box-container .box:hover img {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .portfolio .box-container .box .content {
@@ -376,8 +376,8 @@ section {
   position: absolute;
   top: 0;
   left: -100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 60, 255, 0.329)), to(#529dff));
-  background-image: linear-gradient(180deg, rgba(0, 60, 255, 0.329), #529dff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(227, 133, 40, 0.671)), to(rgba(246, 248, 250, 0.534)));
+  background-image: linear-gradient(180deg, rgba(227, 133, 40, 0.671), rgba(246, 248, 250, 0.534));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
