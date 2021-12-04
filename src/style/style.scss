@@ -6,16 +6,16 @@
   --second-color: #060605;
   --white-color: #F6F8FA;
    --theme: #000;
-  --shadow: 0 0 0.5rem #333;
+  --shadow: 0 0 0.5rem var(--orange);
 }
 
 body.active {
   --orange: #e38528;
-  --bg-color: #141412;
-  --second-color: #fff;
-  --white-color: #060605;
+  --bg-color: #121212;
+  --second-color: #EFEFEF;
+  --white-color: #111;
   --theme: yellow;
-  --shadow: 0 0.5rem 1rem #000;
+  --shadow: 0 0 .5rem var(--orange);
 }
 
 * {
@@ -64,7 +64,7 @@ section {
   font-size: 6rem;
   text-transform: uppercase;
   color: var(--second-color);
-
+  text-shadow: 0 0.5rem 1rem var(--orange);
   span {
     text-transform: uppercase;
     color: var(--orange);
@@ -91,7 +91,7 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  padding: 2rem 9%;
+  padding: 1.5rem 9%;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -165,17 +165,20 @@ section {
       width: 25rem;
       border-radius: 50%;
       object-fit: cover;
-      border: 1rem solid var(--white-color);
+      border: 1rem solid var(--orange);
+      box-shadow: var(--shadow);
     }
 
     h3 {
       font-size: 4rem;
       color: var(--second-color);
       text-transform: uppercase;
+      text-shadow: var(--shadow);
 
       span {
         color: var(--orange);
         text-transform: uppercase;
+        text-shadow: var(--shadow);
       }
     }
 
@@ -193,6 +196,7 @@ section {
         font-size: 2.5rem;
         color: var(--second-color);
         border-radius: 1rem;
+        text-shadow: var(--shadow);
 
         &:hover {
           color: var(--orange);
@@ -221,8 +225,8 @@ section {
     img {
       width: 30rem;
       border-radius: 0.5rem;
-      border: 1rem solid var(--white-color);
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      border: 1rem solid var(--orange);
+      box-shadow: var(--shadow);
     }
   }
 
@@ -235,6 +239,8 @@ section {
 
       span {
         color: var(--orange);
+      text-shadow: var(--shadow);
+
       }
     }
 
@@ -437,6 +443,8 @@ section {
 
   span {
     color: var(--second-color);
+    text-shadow: var(--shadow);
+
   }
 }
 

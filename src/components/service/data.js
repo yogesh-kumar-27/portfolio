@@ -10,27 +10,7 @@ import img9 from '../../images/icons/icon-9.png'
 
 const data = {
     serviceData :[
-        {
-            image: img7,
-            title: "UI/UX Design",
-            desc:'It widely used in website development. Using HTML, we create text with links and hyperlinks that can turn letters into images, tables, and other representations.',
-            link:'https://developer.mozilla.org/en-US/docs/Glossary/HTML5'
-            
-        },
-        {
-            image: img8,
-            title: "Custom Web Apps",
-            desc:'We develop dedicated software and applications with an efficient and functional front-end. We rely on proven technology and frameworks.',
-            link:'https://developer.mozilla.org/en-US/docs/Glossary/HTML5'
-            
-        },
-        {
-            image: img9,
-            title: "SPA Application ",
-            desc:'Single page applications development services with powerful front end, JavaScript-based frameworks for quick scalability.',
-            link:'https://developer.mozilla.org/en-US/docs/Glossary/HTML5'
-            
-        },
+    
         {
             image: img1,
             title: "Html 5",
@@ -48,7 +28,7 @@ const data = {
         {
             image: img3,
             title: "JavaScript Development",
-            desc:'It is the most popular programming language of the web which is used by several websites for scripting the webpages.',
+            desc:'It is the most popular programming language for front-end logic. the web which is used by several websites for scripting the webpages.',
             link:'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
             
         },
@@ -71,10 +51,31 @@ const data = {
         {
             image: img6,
             title: "react.Js",
-            desc:'It is a java scripting language for creating client side user interfaces and is used as a base for developing single page applications.',
+            desc:'It is a most popular library of java script language for creating client side user interfaces and is used as a base for developing single page applications.',
             link:"https://reactjs.org/"
             
         }, 
+        // {
+        //     image: img7,
+        //     title: "UI/UX Design",
+        //     desc:'create user-friendly interfaces that enable users to understand how to use complex technical products.',
+        //     link:'https://developer.mozilla.org/en-US/docs/Glossary/HTML5'
+            
+        // },
+        {
+            image: img8,
+            title: "figma",
+            desc:'Figma is a web-based graphics editing and user interface design app it can use it to do all kinds of graphic design work from wireframing websites, designing mobile app interfaces, prototyping designs, crafting social media posts, and everything in between',
+            link:'https://developer.mozilla.org/en-US/docs/Glossary/HTML5'
+            
+        },
+        {
+            image: img9,
+            title: "SPA Application ",
+            desc:'A single-page application is a web application or website that interacts with the user by dynamically rewriting the current web page with new data from the web server, instead of the default method of a web browser loading entire new pages.',
+            link:'https://developer.mozilla.org/en-US/docs/Glossary/HTML5'
+            
+        },
   
     ]
 }

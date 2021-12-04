@@ -12,7 +12,7 @@ const data = {
     portfolioData :[
         {
             image: img1,
-            link: 'https://github.com/yogesh-kumar-27'
+            link: 'https://netflix-clone-a0b74.firebaseapp.com/'
         },
         {
             image: img2,
@@ -20,15 +20,15 @@ const data = {
         },
         {
             image: img3,
-            link: 'https://github.com/yogesh-kumar-27'
+            link: 'https://github.com/yogesh-kumar-27/amazon-clone'
         },
         {
             image: img4,
-            link: 'https://github.com/yogesh-kumar-27'
+            link: 'https://hulu-clone-eight-beryl.vercel.app/'
         },
         {
             image: img5,
-            link: 'https://github.com/yogesh-kumar-27'
+            link: 'https://airbnb-clone-ruby.vercel.app/disny-pluse'
         },
         {
             image: img6,
@@ -36,15 +36,15 @@ const data = {
         },
         {
             image: img7,
-            link: 'https://github.com/yogesh-kumar-27'
+            link: 'https://yogesh-kumar-27.github.io/Adventure-Tour-Website/'
         },
         {
             image: img8,
-            link: 'https://github.com/yogesh-kumar-27'
+            link: 'https://yogesh-kumar-27.github.io/Tour-Travel-/'
         },
         {
             image: img9,
-            link: 'https://github.com/yogesh-kumar-27'
+            link: 'https://yogesh-kumar-27.github.io/fitness-website/'
         },
       
     ]

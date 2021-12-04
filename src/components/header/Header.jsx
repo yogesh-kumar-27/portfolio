@@ -2,20 +2,13 @@ import { useEffect, useState } from "react";
 
 export default function Header() {
   const [show, setShow] = useState(false);
-  const transitionNavbar = () => {
-    if (window.scrollY > 100) {
-      setShow(true);
-    } else {
-      setShow(false);
-    }
-  };
+  
   const menutoggle = () => {
     let navbar = document.querySelector('.header .navbar');
 
     document.querySelector('#menu-btn').onclick = () =>{
         navbar.classList.add('active');
-    }
-    
+    }  
     document.querySelector('#nav-close').onclick = () =>{
         navbar.classList.remove('active');
     }
@@ -31,6 +24,13 @@ export default function Header() {
         document.body.classList.remove("active");
       }
     };
+  };
+  const transitionNavbar = () => {
+    if (window.scrollY > 100) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
   };
   useEffect(() => {
     menutoggle();
