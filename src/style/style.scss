@@ -5,17 +5,25 @@
   --bg-color: #fcf2e8;
   --second-color: #060605;
   --white-color: #F6F8FA;
-   --theme: #000;
+  --theme: #000;
   --shadow: 0 0 0.5rem var(--orange);
+  --textshadow: 0 0.2rem 0.5rem var(--orange);
+  --gradient: linear-gradient(180deg,
+      rgba(227, 133, 40, 0.671),
+      rgba(246, 248, 250, 0.534));
 }
 
 body.active {
-  --orange: #e38528;
+  --orange: #29d9d5;
   --bg-color: #121212;
   --second-color: #EFEFEF;
   --white-color: #111;
   --theme: yellow;
   --shadow: 0 0 .5rem var(--orange);
+  --textshadow: 0 0.2rem 0.5rem var(--orange);
+  --gradient: linear-gradient(180deg,
+      #29d9d694,
+      rgba(246, 248, 250, 0.534));
 }
 
 * {
@@ -64,7 +72,8 @@ section {
   font-size: 6rem;
   text-transform: uppercase;
   color: var(--second-color);
-  text-shadow: 0 0.5rem 1rem var(--orange);
+  text-shadow: var(--textshadow);
+
   span {
     text-transform: uppercase;
     color: var(--orange);
@@ -146,6 +155,7 @@ section {
     color: var(--theme);
   }
 }
+
 .header_fixed {
   background: var(--bg-color);
   box-shadow: var(--shadow);
@@ -173,12 +183,10 @@ section {
       font-size: 4rem;
       color: var(--second-color);
       text-transform: uppercase;
-      text-shadow: var(--shadow);
 
       span {
         color: var(--orange);
         text-transform: uppercase;
-        text-shadow: var(--shadow);
       }
     }
 
@@ -239,7 +247,6 @@ section {
 
       span {
         color: var(--orange);
-      text-shadow: var(--shadow);
 
       }
     }
@@ -338,9 +345,7 @@ section {
       position: absolute;
       top: 0;
       left: -100%;
-      background-image: linear-gradient(180deg,
-          rgba(227, 133, 40, 0.671),
-          rgba(246, 248, 250, 0.534));
+      background-image: var( --gradient);
       display: flex;
       align-items: center;
       justify-content: center;

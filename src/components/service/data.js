@@ -4,7 +4,7 @@ import img3 from '../../images/icons/icon-3.png'
 import img4 from '../../images/icons/icon-4.png'
 import img5 from '../../images/icons/icon-5.png'
 import img6 from '../../images/icons/icon-6.png'
-import img7 from '../../images/icons/icon-7.png'
+// import img7 from '../../images/icons/icon-7.png'
 import img8 from '../../images/icons/icon-8.png'
 import img9 from '../../images/icons/icon-9.png'
 
