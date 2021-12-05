@@ -3,17 +3,16 @@
   --orange: #e38528;
   --bg-color: #fcf2e8;
   --second-color: #060605;
-  --white-color: #F6F8FA;
+  --white-color: #eee;
   --theme: #000;
   --shadow: 0 0 0.5rem var(--orange);
   --textshadow: 0 0.2rem 0.5rem var(--orange);
 }
 
 body.active {
-  --orange: #e38528;
-  --bg-color: #121212;
-  --second-color: #EFEFEF;
-  --white-color: #111;
+  --bg-color: #111;
+  --second-color: #fff;
+  --white-color: #222;
   --theme: yellow;
   --shadow: 0 0 .5rem var(--orange);
   --textshadow: 0 0.2rem 0.5rem var(--orange);
@@ -155,7 +154,7 @@ section {
 }
 
 .header_fixed {
-  background: var(--bg-color);
+  background: var(--white-color);
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
 }
