@@ -32,7 +32,7 @@ const data = {
         },
         {
             image: img6,
-            link: 'https://github.com/yogesh-kumar-27'
+            link: 'https://disney-plus-dj0dfshwi-yogesh-kumar-27.vercel.app/'
         },
         {
             image: img7,
