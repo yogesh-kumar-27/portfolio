@@ -2,7 +2,6 @@ import Men from "../../images/me.png";
 import Resume from "../../images/yogesh_kumar.pdf";
 export default function About() {
   return (
-
     <section className="about" id="about">
       <h1 className="heading">
         {" "}
@@ -21,13 +20,13 @@ export default function About() {
           </h3>
           <p className="info">
             {" "}
-            Hi there! I am Yogesh! I am a front end web developer Knowledgeable
-            Front End Developer adept at creating successful websites that meet
-            customer needs. Specializing in collaborating with every customers
-            to gather requirements, produce plans and improve designs for
-            usability and functionality. Fully proficient in html, css and
-            javascript.My passion lies in learning about the latest
-            technologies.
+            Hi there! I am Yogesh! I am a Enthusiastic front end web developer,
+            am interested in IT and everything in its orbit., I am looking for a
+            company willing to offer me a placement among their developers. In
+            return, I would offer my full commitment, and be a pleasant and
+            friendly addition to your team. I am therefore currently looking for
+            a job or an internship as a front-end developer.My passion lies in
+            learning about the latest technologies.
           </p>
           <a
             href={Resume}
