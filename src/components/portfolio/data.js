@@ -28,7 +28,7 @@ const data = {
         },
         {
             image: img5,
-            link: 'https://airbnb-clone-ruby.vercel.app/disny-pluse'
+            link: 'https://airbnb-clone-ruby.vercel.app/'
         },
         {
             image: img6,
