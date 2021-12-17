@@ -1,17 +1,20 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function Header() {
-  const [show, setShow] = useState(false);
-  
-  const menutoggle = () => {
-    let navbar = document.querySelector('.header .navbar');
 
-    document.querySelector('#menu-btn').onclick = () =>{
-        navbar.classList.add('active');
-    }  
-    document.querySelector('#nav-close').onclick = () =>{
-        navbar.classList.remove('active');
-    }
+  const menutoggle = () => {
+    let menu = document.querySelector("#menu-bars");
+    let header = document.querySelector("header");
+
+    menu.onclick = () => {
+      menu.classList.toggle("fa-times");
+      header.classList.toggle("active");
+    };
+
+    window.onscroll = () => {
+      menu.classList.remove("fa-times");
+      header.classList.remove("active");
+    };
   };
   const themeToggle = () => {
     let themeToggler = document.querySelector("#theme-toggler");
@@ -25,43 +28,28 @@ export default function Header() {
       }
     };
   };
-  const transitionNavbar = () => {
-    if (window.scrollY > 100) {
-      setShow(true);
-    } else {
-      setShow(false);
-    }
-  };
   useEffect(() => {
     menutoggle();
     themeToggle();
-    window.addEventListener("scroll", transitionNavbar);
     return () => {
       menutoggle();
       themeToggle();
-      window.addEventListener("scroll", transitionNavbar);
     };
   }, []);
   return (
     <>
-  <header className={`header ${show && "header_fixed"}`}>
-    <a href="#home" className="logo"> <i className="fas fa-code"></i> code. </a>
+      <header className="header">
+        <div id="menu-bars" className="fas fa-bars"></div>
 
-    <nav className="navbar">
-      <div id="nav-close" className="fas fa-times"></div>
-      <a href="#home">home</a>
+        <nav className="navbar">
+          <a href="#home">home</a>
           <a href="#about">about</a>
           <a href="#services">services</a>
           <a href="#portfolio">portfolio</a>
           <a href="#contact">contact</a>
-    </nav>
-
-    <div className="icons">
-      <div id="menu-btn" className="fas fa-bars"></div>
+        </nav>
+      </header>
       <div id="theme-toggler" className="fas fa-moon"></div>
-    </div>
-  </header>
-      
     </>
   );
 }

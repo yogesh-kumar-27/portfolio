@@ -50,7 +50,7 @@ export default function About() {
               </p>
               <p>
                 {" "}
-                <span> experience : </span> 0 - 1 years{" "}
+                <span> experience : </span> fresher{" "}
               </p>
               <p>
                 {" "}

@@ -52,6 +52,7 @@ html {
 
 body {
   background: var(--bg-color);
+  padding-right: 5rem;
 }
 
 section {
@@ -91,68 +92,55 @@ section {
 .header {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
-  padding: 1.5rem 9%;
-  z-index: 1000;
-  display: flex;
+  min-height: 100vh;
+  display: inline-flex;
   align-items: center;
-
-  .logo {
-    margin-right: auto;
-    font-size: 2.5rem;
-    color: var(--orange);
-    font-weight: bolder;
-
-    i {
-      color: var(--second-color);
-    }
-  }
+  justify-content: center;
+  background: var(--white-color);
+  z-index: 1000;
 
   .navbar {
+    writing-mode: vertical-lr;
+    padding: 1.5rem;
+
     a {
-      margin-left: 2rem;
-      font-size: 1.7rem;
+      padding: 1.5rem;
+      font-size: 2rem;
       color: var(--second-color);
 
       &:hover {
         color: var(--orange);
       }
     }
-
-    #nav-close {
-      font-size: 5rem;
-      cursor: pointer;
-      color: var(--second-color);
-      display: none;
-    }
   }
 
-  .icons a,
-  .icons div {
-    font-size: 2.5rem;
-    margin-left: 2rem;
-    cursor: pointer;
-    color: var(--second-color);
-
-    &:hover {
-      color: var(--orange);
-    }
-  }
-
-  #menu-btn {
-    display: none;
-  }
-
-  #theme-toggler {
-    color: var(--theme);
-  }
 }
 
-.header_fixed {
-  background: var(--white-color);
-  box-shadow: var(--shadow);
+#menu-bars{
+  position: fixed;
+  z-index: 10000;
+  top: 1rem;
+  left: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  color: var(--second-color);
+  background: var(--green);
+  cursor: pointer;
+  font-size: 3rem;
+  display: none;
 }
+
+#theme-toggler {
+  position: fixed;
+  color: var(--theme);
+  top: 2rem;
+  right: 2rem;
+  z-index: 10000;
+  font-size: 2rem;
+  line-height: 2;
+}
+
 
 .home {
   display: flex;
@@ -450,57 +438,51 @@ section {
 }
 
 /* media queries  */
-@media (max-width: 1200px) {
-  .header {
-    padding: 2rem;
+// @media (max-width: 1200px) {
+//   .header {
+//     padding: 2rem;
+//   }
+
+//   section {
+//     padding: 3rem 2rem;
+//   }
+// }
+
+@media (max-width:991px){
+
+  html{
+      font-size: 55%;
   }
 
-  section {
-    padding: 3rem 2rem;
+  body{
+      padding-right: 0;
   }
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 55%;
+  
+  section{
+      padding:2rem;
   }
 
-  .header {
-    #menu-btn {
-      display: inline-block;
-    }
+  .header{
+      width:50%;
+      left:-120%;
+  }
 
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: -120%;
-      background: var(--orange);
-      z-index: 10000;
-      width: 35rem;
-      height: 100%;
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center;
+  .header.active{
+      left:0%;
+  }
 
-      &.active {
-        left: 0;
-        box-shadow: shadow;
-      }
+  #menu-bars{
+      display: initial;
+  }
 
-      a {
-        margin: 1rem 0;
-        color: var(--white-color);
-        font-size: 3rem;
-      }
+  .header .navbar{
+    writing-mode: horizontal-tb;
+     
+  }
 
-      #nav-close {
-        display: block;
-        position: absolute;
-        top: 1rem;
-        right: 2rem;
-      }
-    }
+  .header .navbar a{
+      display: block;
+      font-size: 3rem;
   }
 
 }
