@@ -10,11 +10,12 @@ export default function Portfolio() {
     <div className="box-container">
 
        {
-        data.portfolioData?.map(({image, link}) =>(
+        data.portfolioData?.map(({image, link,github}) =>(
             <PortfolioCard
                 key={image}
                 image={image}
                 link={link}
+                github={github}
             />
         ))
        }

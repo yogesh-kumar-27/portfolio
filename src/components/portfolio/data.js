@@ -12,39 +12,48 @@ const data = {
     portfolioData :[
         {
             image: img1,
-            link: 'https://netflix-clone-a0b74.firebaseapp.com/'
+            link: 'https://netflix-clone-a0b74.firebaseapp.com/',
+            github: "https://github.com/yogesh-kumar-27/React-netflix",
         },
         {
             image: img2,
-            link: 'https://github.com/yogesh-kumar-27'
+            link: 'https://github.com/yogesh-kumar-27',
+            github: "https://github.com/yogesh-kumar-27/Facebook-Clone",
         },
         {
             image: img3,
-            link: 'https://github.com/yogesh-kumar-27/amazon-clone'
+            link: 'https://amazon-clone-henna-three.vercel.app/',
+            github: "https://github.com/yogesh-kumar-27/amazon-clone",
         },
         {
             image: img4,
-            link: 'https://hulu-clone-eight-beryl.vercel.app/'
+            link: 'https://hulu-clone-eight-beryl.vercel.app/',
+            github: "https://github.com/yogesh-kumar-27/Hulu-Clone",
         },
         {
             image: img5,
-            link: 'https://airbnb-clone-ruby.vercel.app/'
+            link: 'https://airbnb-clone-ruby.vercel.app/',
+            github: "https://github.com/yogesh-kumar-27/Airbnb-clone",  
         },
         {
             image: img6,
-            link: 'https://disney-plus-dj0dfshwi-yogesh-kumar-27.vercel.app/'
+            link: 'https://disney-plus-dj0dfshwi-yogesh-kumar-27.vercel.app/',
+            github: "https://github.com/yogesh-kumar-27/disney-plus",
         },
         {
             image: img7,
-            link: 'https://yogesh-kumar-27.github.io/Adventure-Tour-Website/'
+            link: 'https://yogesh-kumar-27.github.io/Adventure-Tour-Website/',
+            github: "https://github.com/yogesh-kumar-27/Adventure-Tour-Website",
         },
         {
             image: img8,
-            link: 'https://yogesh-kumar-27.github.io/Tour-Travel-/'
+            link: 'https://yogesh-kumar-27.github.io/Tour-Travel-/',
+            github: "https://github.com/yogesh-kumar-27/Tour-Travel-",
         },
         {
             image: img9,
-            link: 'https://yogesh-kumar-27.github.io/fitness-website/'
+            link: 'https://yogesh-kumar-27.github.io/fitness-website/',
+            github: "https://github.com/yogesh-kumar-27/fitness-website",
         },
       
     ]
