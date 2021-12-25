@@ -1,14 +1,6 @@
-import AOS from 'aos';
-import { useEffect } from 'react';
 export default function PortfolioCard({ image, link, github }) {
-  useEffect(() => {
-    AOS.init({
-      duration : 2000
-    });
-  }, []);
-  
   return (
-    <div className="box" data-aos="zoom-in">
+    <div className="box">
       <img src={image} alt="" />
       <div className="content">
         <a rel="noreferrer" target="_blank" href={link} className="btn">

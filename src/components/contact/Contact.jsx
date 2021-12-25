@@ -1,8 +1,7 @@
 import { useForm } from "react-hook-form";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import img from "../../images/contact-img.svg";
-import AOS from "aos";
 export default function Contact() {
   const [done, setDone] = useState(false);
   const form = useRef();
@@ -37,11 +36,6 @@ export default function Contact() {
   const onError = (errors) => {
     console.log(errors);
   };
-  useEffect(() => {
-    AOS.init({
-      duration : 1000,
-    });
-  }, []);
   return (
     <>
       <section className="contact" id="contact">
@@ -51,11 +45,11 @@ export default function Contact() {
         </h1>
 
         <div className="row">
-          <div className="image" data-aos="fade-right">
+          <div className="image">
               <img className="tilt" src={img} alt="" />
           </div>
 
-          <form ref={form} onSubmit={handleSubmit(onSubmitForm, onError)} data-aos="fade-left">
+          <form ref={form} onSubmit={handleSubmit(onSubmitForm, onError)}>
             <div className="inputBox">
               <input
                 type="text"
