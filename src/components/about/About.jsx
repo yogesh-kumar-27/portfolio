@@ -1,6 +1,13 @@
 import Men from "../../images/me.png";
 import Resume from "../../images/yogesh_kumar.pdf";
+import AOS from "aos";
+import { useEffect } from "react";
 export default function About() {
+  useEffect(() => {
+    AOS.init({
+      duration : 1000,
+    });
+  }, []);
   return (
     <section className="about" id="about">
       <h1 className="heading">
@@ -8,12 +15,12 @@ export default function About() {
         about <span>me</span>{" "}
       </h1>
 
-      <div className="row">
-        <div className="image">
+      <div className="row" >
+        <div className="image" data-aos="fade-right">
           <img className="tilt" src={Men} alt="" />
         </div>
 
-        <div className="content">
+        <div className="content" data-aos="fade-left">
           <h3>
             {" "}
             my name is <span> yogesh kumar </span>{" "}
