@@ -2,20 +2,23 @@
 
 :root {
   --orange: #e38528;
-  --bg-color: #fcf2e8;
-  --second-color: #060605;
-  --white-color: #eee;
+  --bg-color: #F5F5F5;
+  --second-color: #111;
+  --para:#262626;
+  --white-color: #fff;
   --theme: #000;
-  --shadow: 0 0 0.5rem var(--orange);
+  --shadow: 0 0 0.2rem var(--orange);
   --textshadow: 0 0.2rem 0.5rem var(--orange);
 }
 
 body.active {
-  --bg-color: #111;
+  --orange: #ff5421;
+  --bg-color: #1d0e15;
   --second-color: #fff;
-  --white-color: #222;
+  --white-color: #1D1918;
+  --para:#F5F5F5;
   --theme: yellow;
-  --shadow: 0 0 .5rem var(--orange);
+  --shadow: 0 0 .5rem var(--second-color);
   --textshadow: 0 0.2rem 0.5rem var(--orange);
 }
 
@@ -85,12 +88,12 @@ section {
   margin-top: 1rem;
   padding: 0.8rem 3rem;
   background: var(--orange);
-  color: var(--white-color);
+  color: #F5F5F5;
   font-size: 1.7rem;
   cursor: pointer;
 
   &:hover {
-    background: var(--second-color);
+    // background: var(--second-color);
     letter-spacing: 0.2rem;
   }
 }
@@ -191,7 +194,7 @@ section {
         font-size: 2.5rem;
         color: var(--second-color);
         border-radius: 1rem;
-        text-shadow: var(--shadow);
+        // text-shadow: var(--shadow);
 
         &:hover {
           color: var(--orange);
@@ -200,7 +203,7 @@ section {
     }
 
     p {
-      color: var(--second-color);
+      color: var(--para);
       font-size: 2.5rem;
       line-height: 2;
     }
@@ -239,7 +242,7 @@ section {
     }
 
     .info {
-      color: var(--second-color);
+      color: var(--para);
       font-size: 1.7rem;
       padding: 1rem 0;
       line-height: 2;
@@ -256,7 +259,7 @@ section {
 
         p {
           font-size: 1.7rem;
-          color: var(--second-color);
+          color: var(--para);
           padding: 0.5rem 0;
           line-height: 2;
 
@@ -275,7 +278,7 @@ section {
   .box {
     // flex: 1 1 30rem;
     border-radius: 1rem;
-    background-color: var(--white-color);
+    background-color: var(--bg-color);
     box-shadow: var(--shadow);
     padding: 2rem;
     text-align: center;
@@ -291,7 +294,7 @@ section {
     }
 
     p {
-      color: var(--second-color);
+      color: var(--para);
       font-size: 1.7rem;
       padding: 1rem 0;
       line-height: 2;
@@ -364,6 +367,7 @@ section {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     background: var(--bg-color);
+    box-shadow: var(--shadow);
 
     .inputBox {
       display: flex;
@@ -435,21 +439,10 @@ section {
 
   span {
     color: var(--second-color);
-    text-shadow: var(--shadow);
+    // text-shadow: var(--shadow);
 
   }
 }
-
-/* media queries  */
-// @media (max-width: 1200px) {
-//   .header {
-//     padding: 2rem;
-//   }
-
-//   section {
-//     padding: 3rem 2rem;
-//   }
-// }
 
 @media (max-width:991px) {
 

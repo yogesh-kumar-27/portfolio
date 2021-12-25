@@ -117,7 +117,7 @@ export default function Contact() {
       </section>
       <footer className="footer">
         {" "}
-        created by <span> React.Js ❤️</span>{" "}
+        created by <span> React.Js ❤️ </span>{" "}
       </footer>
     </>
   );
