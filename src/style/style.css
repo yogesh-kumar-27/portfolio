@@ -3,7 +3,7 @@
   --orange: #e38528;
   --bg-color: #F5F5F5;
   --second-color: #111;
-  --para:#262626;
+  --para: #262626;
   --white-color: #fff;
   --theme: #000;
   --shadow: 0 0 0.2rem var(--orange);
@@ -15,7 +15,7 @@ body.active {
   --bg-color: #1d0e15;
   --second-color: #fff;
   --white-color: #1D1918;
-  --para:#F5F5F5;
+  --para: #F5F5F5;
   --theme: yellow;
   --shadow: 0 0 .5rem var(--second-color);
   --textshadow: 0 0.2rem 0.5rem var(--orange);
@@ -33,6 +33,16 @@ body.active {
   text-transform: capitalize;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+
+* ::-moz-selection {
+  background: var(--orange);
+  color: var(--white-color);
+}
+
+* ::selection {
+  background: var(--orange);
+  color: var(--white-color);
 }
 
 html {
@@ -60,7 +70,7 @@ body {
 }
 
 section {
-  padding: 5rem 9%;
+  padding: 2rem 9%;
   min-height: 100vh;
 }
 
@@ -161,11 +171,31 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+.home #tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.home #tsparticles::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .home .content {
   text-align: center;
-  padding: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .home .content img {
