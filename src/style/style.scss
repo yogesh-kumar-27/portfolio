@@ -160,31 +160,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 
-  #tsparticles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-    }
-
-  }
 
   .content {
     text-align: center;
-    position: relative;
-    z-index: 1;
 
     img {
       height: 25rem;
