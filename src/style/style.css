@@ -71,7 +71,6 @@ body {
 
 section {
   padding: 2rem 9%;
-  min-height: 100vh;
 }
 
 .heading {
@@ -172,7 +171,6 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 
 .home .content {
   text-align: center;
