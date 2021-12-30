@@ -22,7 +22,7 @@ const data = {
         },
         {
             image: img3,
-            link: 'https://amazon-clone-henna-three.vercel.app/',
+            link: 'https://amazon-clone-opal.vercel.app/',
             github: "https://github.com/yogesh-kumar-27/amazon-clone",
         },
         {
