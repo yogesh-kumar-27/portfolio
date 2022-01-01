@@ -21,7 +21,7 @@ const data = {
     },
     {
       image: img3,
-      title: "JavaScript Development",
+      title: "JavaScript",
       desc: "It is the most popular programming language for front-end logic. the web which is used by several websites for scripting the webpages.",
       link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
@@ -35,8 +35,8 @@ const data = {
 
     {
       image: img5,
-      title: "Bootstrap",
-      desc: "It consists of CSS and JS based design templates needed for creating responsive and mobile-first first approch front-end web development.",
+      title: "wordpress",
+      desc: "It is the most popular CMS for website development. It is a content management system (CMS) for creating and managing web sites.",
       link: "https://getbootstrap.com/",
     },
     {
