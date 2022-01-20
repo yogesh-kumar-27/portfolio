@@ -98,6 +98,8 @@ section {
 }
 
 .btn:hover {
+  background: none;
+  border: 0.2rem solid var(--orange);
   letter-spacing: 0.2rem;
 }
 

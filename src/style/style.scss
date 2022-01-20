@@ -71,7 +71,6 @@ body {
 
 section {
   padding: 2rem 9%;
-  // min-height: 100vh;
 }
 
 .heading {
@@ -98,7 +97,8 @@ section {
   cursor: pointer;
 
   &:hover {
-    // background: var(--second-color);
+    background: none;
+    border: .2rem solid var(--orange);
     letter-spacing: 0.2rem;
   }
 }

@@ -1,10 +1,15 @@
 import { useState, useEffect } from "react";
-import {featuredPortfolio,ReactjsPortfolio,NextPortfolio} from "./data";
+import {
+  featuredPortfolio,
+  ReactjsPortfolio,
+  NextPortfolio,
+  designPortfolio,
+} from "./data";
 import PortfolioCard from "./PortfolioCard";
 import PortfolioList from "./PortfolioList";
-export default function Portfolio () {
+export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
-  const[data, setData] = useState([]);
+  const [data, setData] = useState([]);
 
   const list = [
     {
@@ -19,6 +24,10 @@ export default function Portfolio () {
       id: "nextjs",
       title: "next app",
     },
+    {
+      id: "design",
+      title: "Design",
+    },
   ];
   useEffect(() => {
     switch (selected) {
@@ -31,6 +40,9 @@ export default function Portfolio () {
       case "nextjs":
         setData(NextPortfolio);
         break;
+        case "design":
+        setData(designPortfolio);
+        break
       default:
         setData(featuredPortfolio);
     }
@@ -66,4 +78,4 @@ export default function Portfolio () {
       </div>
     </section>
   );
-};
+}
