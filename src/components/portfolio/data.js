@@ -12,6 +12,7 @@ import img11 from "../../images/img-11.jpg";
 import img12 from "../../images/img-12.jpg";
 import img13 from "../../images/img-13.jpg";
 import img14 from "../../images/img-14.jpg";
+import img15 from "../../images/img-15.jpg";
 
 
 export const featuredPortfolio = [
@@ -110,6 +111,12 @@ export const NextPortfolio = [
     link: "https://disney-plus-dj0dfshwi-yogesh-kumar-27.vercel.app/",
     github: "https://github.com/yogesh-kumar-27/disney-plus",
   },
+  {
+    image: img15,
+    link: "https://medium2-0-flax.vercel.app/",
+    github: "https://github.com/yogesh-kumar-27/medium2.0",
+  },
+  
 ];
 export const designPortfolio = [
   {
