@@ -12,7 +12,7 @@ import img11 from "../../images/img-11.jpg";
 import img12 from "../../images/img-12.jpg";
 import img13 from "../../images/img-13.jpg";
 import img14 from "../../images/img-14.jpg";
-import img15 from "../../images/img-15.jpg";
+import img15 from "../../images/img-15.png";
 
 
 export const featuredPortfolio = [
