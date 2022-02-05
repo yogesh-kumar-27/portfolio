@@ -10,7 +10,6 @@ export default function Contact() {
     handleSubmit,
     formState: { errors },
     reset,
-    trigger,
   } = useForm();
 
   const onSubmitForm = () => {
@@ -24,10 +23,11 @@ export default function Contact() {
       .then(
         (result) => {
           console.log(result.text);
-          setDone(true)
+          setDone(true);
         },
         (error) => {
           console.log(error.text);
+          setDone(false);
         }
       );
 
@@ -43,81 +43,80 @@ export default function Contact() {
           {" "}
           contact <span> me </span>{" "}
         </h1>
-
-        <div className="row">
-          <div className="image">
-              <img className="tilt" src={img} alt="" />
+        {done ? (
+          <div className="contact-done">
+            <h1 className="heading">Thank you for contacting me.</h1>
+            <p className="heading">I will get back to you as soon as possible.</p>
           </div>
+        ) : (
+          <>
+            <div className="row">
+              <div className="image">
+                <img src={img} alt="" />
+              </div>
 
-          <form ref={form} onSubmit={handleSubmit(onSubmitForm, onError)}>
-            <div className="inputBox">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="name"
-                {...register("name", { required: "Name is Required" })}
-                onKeyUp={() => {
-                  trigger("name");
-                }}
-              />
-              {errors.name && <small>{errors.name.message}</small>}
-              <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="email"
-                {...register("email", {
-                  required: "Email is Required",
-                  pattern: {
-                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                    message: "Invalid email address",
-                  },
-                })}
-                onKeyUp={() => {
-                  trigger("email");
-                }}
-              />
-              {errors.email && <small>{errors.email.message}</small>}
+              <form ref={form} onSubmit={handleSubmit(onSubmitForm, onError)}>
+                <div className="inputBox">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="name"
+                    {...register("name", { required: true })}
+                  />
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="email"
+                    {...register(
+                      "email",
+                      { required: true },
+                      {
+                        pattern: {
+                          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                          message: "Invalid email address",
+                        },
+                      }
+                    )}
+                  />
+                </div>
+
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="subject"
+                  className="box"
+                  {...register("subject", {
+                    required: true,
+                  })}
+                />
+
+                <textarea
+                  placeholder="message"
+                  id="message"
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  {...register("message", { required: true })}
+                />
+                <div className="error">
+                  {errors.name && <em>- the name field is required</em>}
+                  {errors.email && <em>- the email field is required</em>}
+                  {errors.subject && <em>- the subject field is required</em>}
+                  {errors.message && <em>- the message field is required</em>}
+                </div>
+                <input type="submit" className="btn" value="Send" />
+              </form>
             </div>
-
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="subject"
-              className={`box ${errors.subject && "invalid"}`}
-              {...register("subject", {
-                required: "subject is Required",
-              })}
-              onKeyUp={() => {
-                trigger("subject");
-              }}
-            />
-            {errors.subject && <small>{errors.subject.message}</small>}
-
-            <textarea
-              placeholder="message"
-              id="message"
-              name="message"
-              cols="30"
-              rows="10"
-              {...register("message", {
-                required: "message is Required",
-              })}
-              onKeyUp={() => {
-                trigger("message");
-              }}
-            />
-            {errors.message && <small>{errors.message.message}</small>}
-            {done && <strong>Contact you ASAP</strong>}
-            <input type="submit" className="btn" value="Send" />
-          </form>
-        </div>
+          </>
+        )}
       </section>
+
       <footer className="footer">
         {" "}
-        created by <span> React.Js ❤️ </span>{" "}
+        created by <span> Mahakal ❤️ </span>{" "}
       </footer>
     </>
   );

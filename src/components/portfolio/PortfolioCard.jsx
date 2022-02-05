@@ -1,4 +1,4 @@
-export default function PortfolioCard({ image, link, github }) {
+const PortfolioCard = ({ image, link, github }) => {
   return (
     <div className="box">
       <img src={image} alt="" />
@@ -12,4 +12,6 @@ export default function PortfolioCard({ image, link, github }) {
       </div>
     </div>
   );
-}
+};
+
+export default PortfolioCard;

@@ -1,3 +1,4 @@
+import React from "react";
 import Service from "./components/service/Service";
 import About from "./components/about/About";
 import Hero from "./components/hero/Hero";
@@ -8,15 +9,14 @@ import Header from "./components/header/Header";
 const App = () => {
   return (
     <div>
-      <Header/>
+      <Header />
       <Hero />
       <About />
-      <Service/>
-      <Portfolio/>
-      <Contact/>
+      <Service />
+      <Portfolio />
+      <Contact />
     </div>
   );
 };
 
 export default App;
-
