@@ -18,6 +18,7 @@
     "react-scripts": "4.0.3",
     "react-tilt": "^0.1.4",
     "sass": "^1.49.7",
+    "scrollreveal": "^4.0.9",
     "typed.js": "^2.0.12",
     "vanilla-tilt": "^1.7.2",
     "web-vitals": "^1.0.1"

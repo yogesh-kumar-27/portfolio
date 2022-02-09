@@ -1,4 +1,24 @@
+import scrollreveal from "scrollreveal";
+import React,{useEffect} from "react";
 const PortfolioCard = ({ image, link, github }) => {
+  useEffect(() => {
+    const animationEffect = () => {
+      const sr = scrollreveal({
+        origin: "bottom",
+        distance: "80px",
+        duration: 2000,
+        reset: false,
+      });
+      sr.reveal(`.box`,{
+        interval: 500
+      });
+    }
+  
+    animationEffect();
+    return () => {
+      animationEffect();
+    }
+  }, [])
   return (
     <div className="box">
       <img src={image} alt="" />
