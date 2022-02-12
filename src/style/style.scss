@@ -278,15 +278,17 @@ section {
   @include grid(30rem);
 
   .box {
-    // flex: 1 1 30rem;
     border-radius: 1rem;
     background-color: var(--bg-color);
-    box-shadow: var(--shadow);
     padding: 2rem;
     text-align: center;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 
     img {
       height: 8rem;
+      &:hover{
+        transform: scale(1.5);
+      }
     }
 
     h3 {
@@ -301,6 +303,7 @@ section {
       padding: 1rem 0;
       line-height: 2;
     }
+    
   }
 }
 
