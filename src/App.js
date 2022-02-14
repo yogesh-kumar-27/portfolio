@@ -16,7 +16,7 @@ const App = () => {
         duration: 2000,
         reset: false,
       });
-      sr.reveal(`.header,.hero,.about,.service,.portfolio,.contact`,{
+      sr.reveal(`.header,.hero,.box,.about,.service,.portfolio,.contact`,{
         interval: 500
       });
     }

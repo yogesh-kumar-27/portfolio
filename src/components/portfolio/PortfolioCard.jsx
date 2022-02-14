@@ -9,7 +9,7 @@ const PortfolioCard = ({ image, link, github }) => {
         duration: 2000,
         reset: false,
       });
-      sr.reveal(`.box`,{
+      sr.reveal(`#box`,{
         interval: 500
       });
     }
@@ -20,7 +20,7 @@ const PortfolioCard = ({ image, link, github }) => {
     }
   }, [])
   return (
-    <div className="box">
+    <div className="box" id="box">
       <img src={image} alt="" />
       <div className="content">
         <a rel="noreferrer" target="_blank" href={link} className="btn">

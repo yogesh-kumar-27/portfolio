@@ -114,10 +114,10 @@ export default function Contact() {
         )}
       </section>
 
-      <footer className="footer">
+      {/* <footer className="footer">
         {" "}
         created by <span> Mahakal ❤️ </span>{" "}
-      </footer>
+      </footer> */}
     </>
   );
 }

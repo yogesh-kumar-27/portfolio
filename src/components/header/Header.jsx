@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 
 export default function Header() {
-
   const menutoggle = () => {
     let menu = document.querySelector("#menu-bars");
     let header = document.querySelector("header");
@@ -39,8 +38,6 @@ export default function Header() {
   return (
     <>
       <header className="header">
-        <div id="menu-bars" className="fas fa-bars"></div>
-
         <nav className="navbar">
           <a href="#home">home</a>
           <a href="#about">about</a>
@@ -49,6 +46,7 @@ export default function Header() {
           <a href="#contact">contact</a>
         </nav>
       </header>
+      <div id="menu-bars" className="fas fa-bars"></div>
       <div id="theme-toggler" className="fas fa-moon"></div>
     </>
   );
