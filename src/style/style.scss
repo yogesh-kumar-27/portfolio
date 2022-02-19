@@ -1,35 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
-
-:root {
-  --orange: #e38528;
-  --bg-color: #ffffff;
-  --second-color: #111;
-  --para: #262626;
-  --white-color: #fff;
-  --theme: #000;
-  --shadow: 0 0 0.2rem var(--orange);
-  --textshadow: 0 0.2rem 0.5rem var(--orange);
-}
-
-body.active {
-  --orange: #ff5421;
-  --bg-color: #1d0e15;
-  --second-color: #fff;
-  --white-color: #1d1918;
-  --para: #f5f5f5;
-  --theme: yellow;
-  --shadow: 0 0 0.5rem var(--second-color);
-  --textshadow: 0 0.2rem 0.5rem var(--orange);
-}
-
-@mixin grid($val) {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
-  gap: 1.5rem;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Rubik:wght@400;500&display=swap");
 
 * {
-  font-family: "Nunito", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -45,17 +16,43 @@ body.active {
   }
 }
 
+:root {
+  --orange: #e38528;
+  --bg-color: #ffffff;
+  --second-color: #1f2226;
+  --para: #3b3c3d;
+  --white-color: #fff;
+  --theme: #000;
+  --shadow: 0 0 0.2rem var(--orange);
+  --textshadow: 0 0.2rem 0.5rem var(--orange);
+}
+
+body.active {
+  --orange: #ff5421;
+  --bg-color: #15161a;
+  --second-color: #fff;
+  --white-color: #1d1918;
+  --para: #e6e7e8;
+  --theme: yellow;
+  --shadow: 0 0 0.5rem var(--second-color);
+  --textshadow: 0 0.2rem 0.5rem var(--orange);
+}
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1.5rem;
+}
 html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 
   &::-webkit-scrollbar {
-    width: 0.7rem;
+    width: 0.5rem;
   }
 
   &::-webkit-scrollbar-track {
-    background: #e6a57e;
+    background: var(--white-color) ;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -66,7 +63,10 @@ html {
 
 body {
   background: var(--bg-color);
-  padding-right: 5rem;
+  // padding-right: 5rem;
+  // overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 section {
@@ -92,7 +92,7 @@ section {
   margin-top: 1rem;
   padding: 0.8rem 3rem;
   background: var(--orange);
-  color:#FFF;
+  color: #fff;
   font-size: 1.7rem;
   cursor: pointer;
 
@@ -157,8 +157,7 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  // background-color: #eee;
-  // clip-path: polygon(0 0, 100% 0%, 100% 78%, 0 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 78%, 0 100%);
 
   .content {
     text-align: center;
@@ -197,7 +196,7 @@ section {
         font-size: 2.5rem;
         color: var(--second-color);
         border-radius: 1rem;
-        // text-shadow: var(--shadow);
+        box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 
         &:hover {
           color: var(--orange);
@@ -286,8 +285,8 @@ section {
     border: 1rem solid var(--white-color);
     img {
       height: 8rem;
-      &:hover{
-        transform:translateY(-5px);
+      &:hover {
+        transform: translateY(-5px);
       }
     }
 
@@ -303,7 +302,6 @@ section {
       padding: 1rem 0;
       line-height: 2;
     }
-    
   }
 }
 
@@ -341,10 +339,10 @@ section {
         width: 100%;
         object-fit: cover;
       }
-        .btn{
-          background: var(--orange);
-          font-weight: bold;
-        }
+      .btn {
+        background: var(--orange);
+        font-weight: bold;
+      }
       &:hover img {
         transform: scale(1.2);
       }
@@ -373,11 +371,11 @@ section {
 }
 
 .contact {
-  .contact-done{
-    .heading{
+  .contact-done {
+    .heading {
       text-transform: capitalize;
     }
-    p{
+    p {
       color: var(--orange);
     }
   }
@@ -386,15 +384,15 @@ section {
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-  
+
     .image {
       flex: 1 1 40rem;
-  
+
       img {
         width: 100%;
       }
     }
-    
+
     form {
       flex: 1 1 40rem;
       padding: 1rem 2rem;
@@ -414,7 +412,7 @@ section {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-  
+
         input {
           width: 100%;
           border-radius: 0.5rem;
@@ -426,7 +424,7 @@ section {
           text-transform: none;
         }
       }
-  
+
       .box,
       textarea {
         width: 100%;
@@ -438,39 +436,38 @@ section {
         border: 0.1rem solid rgba(0, 0, 0, 0.1);
         text-transform: none;
       }
-  
+
       .inputBox input:focus,
       .box:focus,
       textarea:focus {
         border-color: var(--orange);
       }
-  
+
       .inputBox input {
         width: 49%;
       }
-  
+
       textarea {
         height: 20rem;
         resize: none;
       }
-  
+
       small {
         color: red;
         display: block;
       }
-  
+
       strong {
         color: red;
         font-size: 1rem;
         display: block;
       }
-  
+
       .btn {
         margin: 0.5rem 0;
       }
     }
   }
-  
 }
 .footer {
   padding: 2.5rem;
@@ -501,7 +498,7 @@ section {
   .header {
     width: 50%;
     left: -120%;
-    transition:  .2s linear;
+    transition: 0.2s linear;
   }
 
   .header.active {
