@@ -7,7 +7,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
   transition: all 0.2s linear;
 
   ::selection {
@@ -18,9 +17,9 @@
 
 :root {
   --orange: #e38528;
-  --bg-color: #ffffff;
-  --second-color: #1f2226;
-  --para: #3b3c3d;
+  --bg-color: #f4f4f6;
+  --second-color: #18171d;
+  --para: #27262b;
   --white-color: #fff;
   --theme: #000;
   --shadow: 0 0 0.2rem var(--orange);
@@ -29,13 +28,13 @@
 
 body.active {
   --orange: #ff5421;
-  --bg-color: #15161a;
-  --second-color: #fff;
+  --bg-color: #171717;
+  --second-color: #e5e5e5;
   --white-color: #1d1918;
-  --para: #e6e7e8;
+  --para: #d4d4d4;
   --theme: yellow;
   --shadow: 0 0 0.5rem var(--second-color);
-  --textshadow: 0 0.2rem 0.5rem var(--orange);
+  --textshadow: 0 0.2rem 0.5rem var(--bg-color);
 }
 @mixin grid($val) {
   display: grid;
@@ -52,7 +51,7 @@ html {
   }
 
   &::-webkit-scrollbar-track {
-    background: var(--white-color) ;
+    background: var(--white-color);
   }
 
   &::-webkit-scrollbar-thumb {
@@ -63,8 +62,8 @@ html {
 
 body {
   background: var(--bg-color);
-  // padding-right: 5rem;
-  // overflow-x: hidden;
+  padding-right: 5rem;
+  overflow-x: hidden;
   font-family: "Nunito", sans-serif;
   font-family: "Rubik", sans-serif;
 }
@@ -75,15 +74,18 @@ section {
 
 .heading {
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
+  margin-top: 5rem;
   font-size: 6rem;
-  text-transform: uppercase;
-  color: var(--second-color);
+  color: var(--orange);
+  text-transform: capitalize;
   text-shadow: var(--textshadow);
+  font-weight: 500;
+  letter-spacing: 2px;
 
   span {
-    text-transform: uppercase;
-    color: var(--orange);
+    color: var(--second-color);
+    text-transform: capitalize;
   }
 }
 
@@ -95,6 +97,8 @@ section {
   color: #fff;
   font-size: 1.7rem;
   cursor: pointer;
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease-in-out;
 
   &:hover {
     letter-spacing: 1px;
@@ -156,7 +160,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 90vh;
   clip-path: polygon(0 0, 100% 0%, 100% 78%, 0 100%);
 
   .content {
@@ -173,8 +177,11 @@ section {
 
     h3 {
       font-size: 4rem;
+      letter-spacing: 2px;
+      font-weight: 500;
       color: var(--second-color);
       text-transform: uppercase;
+      padding-top: 0.5rem;
 
       span {
         color: var(--orange);
@@ -196,10 +203,11 @@ section {
         font-size: 2.5rem;
         color: var(--second-color);
         border-radius: 1rem;
-        box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 
         &:hover {
           color: var(--orange);
+          box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
         }
       }
     }
@@ -217,7 +225,6 @@ section {
   flex-wrap: wrap;
   gap: 1.5rem;
   align-items: center;
-
   .image {
     text-align: center;
     flex: 1 1 20rem;
@@ -236,6 +243,8 @@ section {
     h3 {
       color: var(--second-color);
       font-size: 4rem;
+      letter-spacing: 1px;
+      font-weight: 500;
 
       span {
         color: var(--orange);
@@ -247,6 +256,7 @@ section {
       font-size: 1.7rem;
       padding: 1rem 0;
       line-height: 2;
+      letter-spacing: 1px;
     }
 
     .box-container {
@@ -263,9 +273,11 @@ section {
           color: var(--para);
           padding: 0.5rem 0;
           line-height: 2;
+          text-transform: none;
 
           span {
             color: var(--orange);
+            text-transform: capitalize;
           }
         }
       }
@@ -278,11 +290,14 @@ section {
 
   .box {
     border-radius: 1rem;
-    background-color: var(--bg-color);
+    background-color: var(--white-color);
     padding: 2rem;
     text-align: center;
-    box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+
     border: 1rem solid var(--white-color);
+    &:hover {
+      box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
     img {
       height: 8rem;
       &:hover {
@@ -294,6 +309,8 @@ section {
       color: var(--second-color);
       font-size: 2.5rem;
       padding-top: 1rem;
+      text-transform: capitalize;
+      letter-spacing: 2px;
     }
 
     p {
@@ -301,6 +318,7 @@ section {
       font-size: 1.7rem;
       padding: 1rem 0;
       line-height: 2;
+      letter-spacing: 1px;
     }
   }
 }
@@ -319,6 +337,7 @@ section {
       letter-spacing: 0;
       color: var(--para);
       cursor: pointer;
+      text-transform: capitalize;
       &.active {
         background: var(--orange);
       }
@@ -328,12 +347,14 @@ section {
     @include grid(30rem);
 
     .box {
-      box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
       border-radius: 0.5rem;
       border: 1rem solid var(--white-color);
       position: relative;
       overflow: hidden;
       height: 25rem;
+      &:hover {
+        box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+      }
       img {
         height: 100%;
         width: 100%;
@@ -341,7 +362,7 @@ section {
       }
       .btn {
         background: var(--orange);
-        font-weight: bold;
+        text-transform: capitalize;
       }
       &:hover img {
         transform: scale(1.2);

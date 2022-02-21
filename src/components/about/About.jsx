@@ -5,7 +5,7 @@ export default function About() {
     <section className="about" id="about">
       <h1 className="heading">
         {" "}
-        about <span>me</span>{" "}
+        <span> about </span> me{" "}
       </h1>
 
       <div className="row">
@@ -16,7 +16,7 @@ export default function About() {
         <div className="content">
           <h3>
             {" "}
-            my name is <span> yogesh kumar </span>{" "}
+            My name is <span> Yogesh kumar </span>{" "}
           </h3>
           <p className="info">
             {" "}

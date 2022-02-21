@@ -40,19 +40,16 @@ export default function Portfolio() {
       case "nextjs":
         setData(NextPortfolio);
         break;
-        case "design":
+      case "design":
         setData(designPortfolio);
-        break
+        break;
       default:
         setData(featuredPortfolio);
     }
   }, [selected]);
   return (
     <section className="portfolio" id="portfolio">
-      <h1 className="heading">
-        {" "}
-        <span> my </span> portfolio{" "}
-      </h1>
+      <h1 className="heading">portfolio</h1>
       <div className="button">
         <ul>
           {list.map((item) => (

@@ -42,7 +42,7 @@ const data = {
     {
       image: img6,
       title: "react.Js",
-      desc: "It is a most popular library of java script language for creating client side user interfaces and is used as a base for developing single page applications.",
+      desc: "It is a most popular library of java-script language for creating client side user interfaces and is used as a base for developing single page applications.",
       link: "https://reactjs.org/",
     },
   ],
