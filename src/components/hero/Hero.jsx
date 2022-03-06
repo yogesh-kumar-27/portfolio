@@ -30,7 +30,7 @@ export default function Hero() {
         </h3>
         <p>
           {" "}
-          i am a <span className="typing-text"></span>{" "}
+          I am a <span className="typing-text"></span>{" "}
         </p>
         <div className="share">
           <a

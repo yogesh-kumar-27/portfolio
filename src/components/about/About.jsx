@@ -68,7 +68,7 @@ export default function About() {
               </p>
               <p>
                 {" "}
-                <span> email : </span> yogeshkumar10@gmail.com
+                <span> email : </span> yk6130814@gmail.com
               </p>
               <p>
                 {" "}
