@@ -13,7 +13,9 @@ import img12 from "../../images/img-12.jpg";
 import img13 from "../../images/img-13.jpg";
 import img14 from "../../images/img-14.jpg";
 import img15 from "../../images/img-15.png";
-
+import img16 from "../../images/img-16.png";
+import img17 from "../../images/img-17.jpg";
+import img18 from "../../images/img-18.jpg";
 
 export const featuredPortfolio = [
   {
@@ -57,9 +59,9 @@ export const featuredPortfolio = [
     github: "https://github.com/yogesh-kumar-27/Tour-Travel-",
   },
   {
-    image: img9,
-    link: "https://yogesh-kumar-27.github.io/fitness-website/",
-    github: "https://github.com/yogesh-kumar-27/fitness-website",
+    image: img18,
+    link: "https://yogesh-kumar-27.github.io/Easybank-landing-page/",
+    github: "https://github.com/yogesh-kumar-27/Easybank-landing-page",
   },
 ];
 export const ReactjsPortfolio = [
@@ -89,6 +91,11 @@ export const ReactjsPortfolio = [
     link: "https://yogesh-kumar-27.github.io/fitness-website/",
     github: "https://github.com/yogesh-kumar-27/fitness-website",
   },
+  {
+    image:img16,
+    link:"https://weather-app-ruddy-omega.vercel.app/",
+    github:"https://github.com/yogesh-kumar-27/Weather-App"
+  }
 ];
 export const NextPortfolio = [
   {
@@ -143,6 +150,16 @@ export const designPortfolio = [
     image: img14,
     link: "https://yogesh-kumar-27.github.io/Fylo-landing-page/",
     github: "https://github.com/yogesh-kumar-27/Fylo-landing-page",
+  },
+  {
+    image: img17,
+    link: "https://yogesh-kumar-27.github.io/Frontend-Mentor-Bookmark-landing-page/",
+    github: "https://github.com/yogesh-kumar-27/Frontend-Mentor-Bookmark-landing-page",
+  },
+  {
+    image: img18,
+    link: "https://yogesh-kumar-27.github.io/Easybank-landing-page/",
+    github: "https://github.com/yogesh-kumar-27/Easybank-landing-page",
   },
 ];
 // export default {featuredPortfolio,ReactjsPortfolio,NextPortfolio};

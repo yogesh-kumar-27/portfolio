@@ -207,6 +207,7 @@ section {
         &:hover {
           color: var(--orange);
           box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+          transform: rotate(360deg);
         }
       }
     }
