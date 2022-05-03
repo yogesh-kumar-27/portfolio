@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap");
 
 * {
   margin: 0;
@@ -17,7 +18,7 @@
 
 :root {
   --orange: #e38528;
-  --bg-color: #f4f4f6;
+  --bg-color: #f3f1ec;
   --second-color: #18171d;
   --para: #27262b;
   --white-color: #fff;
@@ -27,7 +28,7 @@
 }
 
 body.active {
-  --orange: #ff5421;
+  --orange: #1c7e82;
   --bg-color: #171717;
   --second-color: #e5e5e5;
   --white-color: #1d1918;
@@ -63,7 +64,6 @@ html {
 body {
   background: var(--bg-color);
   padding-right: 5rem;
-  font-family: "Nunito", sans-serif;
   font-family: "Rubik", sans-serif;
 }
 
@@ -80,11 +80,13 @@ section {
   text-transform: capitalize;
   text-shadow: var(--textshadow);
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: "Merienda One", cursive;
 
   span {
     color: var(--second-color);
     text-transform: capitalize;
+    font-family: "Merienda One", cursive;
   }
 }
 
@@ -120,9 +122,11 @@ section {
     padding: 1.5rem;
 
     a {
-      padding: 1.5rem;
+      padding: 1.7rem;
       font-size: 2rem;
       color: var(--second-color);
+      font-weight: 500;
+      text-transform: capitalize;
 
       &:hover {
         color: var(--orange);
@@ -149,7 +153,7 @@ section {
   position: fixed;
   color: var(--theme);
   top: 2rem;
-  right: 2rem;
+  right: 1.5rem;
   z-index: 10000;
   font-size: 2rem;
   line-height: 2;
@@ -160,7 +164,6 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 90vh;
-  clip-path: polygon(0 0, 100% 0%, 100% 78%, 0 100%);
 
   .content {
     text-align: center;
@@ -181,10 +184,12 @@ section {
       color: var(--second-color);
       text-transform: uppercase;
       padding-top: 0.5rem;
+      font-family: "Merienda One", cursive;
 
       span {
         color: var(--orange);
         text-transform: uppercase;
+        font-family: "Merienda One", cursive;
       }
     }
 
@@ -245,9 +250,12 @@ section {
       font-size: 4rem;
       letter-spacing: 1px;
       font-weight: 500;
+      
+   font-family: 'Merienda One', cursive;
 
       span {
         color: var(--orange);
+           font-family: 'Merienda One', cursive;
       }
     }
 
@@ -392,6 +400,7 @@ section {
 }
 
 .contact {
+  margin-bottom: 1rem;
   .contact-done {
     .heading {
       text-transform: capitalize;
@@ -492,16 +501,48 @@ section {
 }
 .footer {
   padding: 2.5rem;
-  font-size: 2rem;
-  color: #666;
-  background: var(--white-color);
   text-align: center;
+  background: var(--white-color);
+  .nav ul li {
+    display: inline-block;
+    margin-bottom: 1rem;
+    a {
+      padding: 1.7rem;
+      font-size: 2rem;
+      color: var(--second-color);
+      text-transform: capitalize;
 
-  span {
-    color: var(--second-color);
-    // text-shadow: var(--shadow);
+      &:hover {
+        color: var(--orange);
+      }
+    }
+  }
+  .share {
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    a i {
+      height: 5rem;
+      width: 5rem;
+      line-height: 5rem;
+      background-color: var(--para);
+      box-shadow: var(--shadow);
+      margin: 0.5rem;
+      font-size: 2.5rem;
+      color: var(--bg-color);
+      border-radius: 1rem;
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        color: var(--orange);
+        box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+        transform: rotate(360deg);
+      }
+    }
   }
 }
+
+// media query
 
 @media (max-width: 991px) {
   html {

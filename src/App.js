@@ -6,6 +6,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Header from "./components/header/Header";
 import scrollreveal from "scrollreveal";
+import Footer from "./components/footer/Footer";
 const App = () => {
 
   useEffect(() => {
@@ -35,6 +36,7 @@ const App = () => {
       <Service />
       <Portfolio />
       <Contact />
+      <Footer/>
     </div>
   );
 };
