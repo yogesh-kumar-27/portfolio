@@ -42,7 +42,7 @@ export default function About() {
             <div className="box">
               <p>
                 {" "}
-                <span> age: </span> 22{" "}
+                <span> age: </span> 21{" "}
               </p>
               <p>
                 {" "}
